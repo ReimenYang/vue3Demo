@@ -1,0 +1,58 @@
+page,html{
+	--color-border-line: #ddd;/* 边框、分割线 */
+	--color-background: #f8f8f8;/* 背景色 */
+	--color-normal: #333;/* 标题、正文、输入栏文字 */
+	--color-light: #666;/* 次要、副文案 */
+	--color-disabled: #ccc;/* 不可操作信息 */
+	--color-tips: #999;/* 提示信息 */
+	--color-placeholder: #d2d2d2;/* 副文案、提示信息 */
+	--color-warning: #c00;/* 重要、警告、提示、标签 */
+	--color-white: #fff;/* 反白、按钮文字 */
+	
+	--font-h1: 2rem;/* 重点字体 32 */
+	--font-h2: 1.625rem;/* 信息流标题、图标 26 */
+	--font-h3: 1.25rem;/* 详情标题 20 */
+	--font-h4: 1rem;/* 列表标题、按钮 16 */
+	--font-h5: .875rem;/* 正文、正文次要 14 */
+	--font-h6: .75rem;/* 标签、列表次要 12 */
+	
+	--border-style: 1Px solid;/* 自定义边框 */
+	--border-normal: 1Px solid var(--color-border-line);/* 常用边框 */
+	--border-radius: .5rem;/* 圆角 */
+	
+	--button-height: 2.5rem;/* 按钮高度 */
+	--button-disable: .7;/* 禁用 */
+	--button-light: .9;/* 次要按钮 */
+	
+	--shadow-light: 0 .1875rem .1875rem 0 rgba(0,0,0,.1);
+	
+	--space-normal:.625rem;
+	
+	--mask-deep: rgba(0,0,0,.5);
+
+    height: 100%;
+    --font-normal:calc( 100vw / 120 );
+    font-size: var( --font-normal );
+}
+body{
+    min-width: 1920px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.btnGroup{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	.btn{
+		flex: 1;
+		line-height: var(--button-height);
+		border: var(--border-normal);
+	}
+	.primary{
+		background-color: var(--theme-color);
+		border-color: var(--theme-color);
+		color: var(--color-white);
+	}
+}

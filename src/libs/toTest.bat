@@ -1,0 +1,2 @@
+node ./node/toTest
+pause

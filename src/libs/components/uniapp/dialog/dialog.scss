@@ -1,0 +1,41 @@
+.dialogBox {
+	.mask {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--mask-deep);
+		.dialogBody {
+			background: var(--color-white);
+			border-radius: var(--border-radius);
+			box-shadow: var(--shadow-light);
+			overflow: hidden;
+			.header {
+				height: var(--button-height);
+				text-align: center;
+				line-height: var(--button-height);
+			}
+			.footer {
+				.btnGroup {
+					display: flex;
+					justify-content: space-between;
+					text-align: center;
+					.btn {
+						flex: 1;
+						line-height: var(--button-height);
+						border: var(--border-normal);
+					}
+					.primary {
+						background-color: var(--theme-color);
+						border-color: var(--theme-color);
+						color: var(--color-white);
+					}
+				}
+			}
+		}
+	}
+}

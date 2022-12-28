@@ -1,0 +1,57 @@
+.signature {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100vw;
+	height: 100vh;
+	z-index: 100;
+	.drawCanvas{
+		width: 100vw;
+		height: 100vh;
+	background-color: #fff;
+	}
+	.handwriter_copy{
+		width: 100vh;
+		height: 100vw;
+	background-color: #fff;
+	}
+	.footer{
+	    width: 100vh;
+	    height: 120rpx;
+	    position: absolute;
+	    // background-color: red;
+	    top: calc(50vh - 120rpx/2);
+	    left: calc(-100vw + 120rpx/2 + 26rpx);
+		transform: rotate(-90deg);
+		font-size: var(--font-h4);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.left,.right{
+		display: flex;
+		line-height: 100rpx;
+		text-align: center;
+	}
+	.btn{
+		width: 200rpx;
+		margin-right: var(--space-normal);
+		box-sizing: border-box;
+		line-height: var(--button-height);
+		border-radius: 50rpx;
+	}
+	.clear{
+		border: 2px solid;
+	}
+	.finish{
+		color: var(--color-white);
+	}
+	.placeholder{
+		color: var(--color-placeholder);
+	}
+	.close {
+		width: 100rpx;
+		font-size: var(--font-h3);
+		text-align: center;
+	}
+	}
