@@ -14,7 +14,8 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
     uni: true,
     getApp: true,
-    getCurrentPages: true
+    getCurrentPages: true,
+    plus: true
   },
   // parser: "babel-eslint",
   parserOptions: {
